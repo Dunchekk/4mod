@@ -1,0 +1,106 @@
+@import url(font.css);
+
+/* for index.css */
+
+
+body {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBMPlexMono';
+    background: black;
+}
+nav {
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: nav 3s ease forwards;
+}
+.nav {
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    user-select: none;
+    cursor: pointer; 
+}
+a {
+    all: unset;
+   
+}
+
+
+/* KEYFRAMES */
+
+@keyframes nav {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+/* ADAPTIVES */
+
+@media screen and (min-width: 1920px) {                            /*    1920    */
+
+    * {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {                            /*    1440    */ 
+
+    * {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px)and (max-width: 1439px) {                            /*    1200    */
+
+    * {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {                            /*    992    */
+
+    * {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {                            /*    768    */
+
+    * {
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {                            /*    576    */
+
+    * {
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {                            /*    320    */
+
+    * {
+        font-size: 10px;
+    }
+    
+}
